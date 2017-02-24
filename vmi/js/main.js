@@ -125,7 +125,7 @@
      -------------------------------------*/
     var eventCounter = $('#countdown');
     if(eventCounter.length){
-        eventCounter.countdown('2017/03/10', function (e) {
+        eventCounter.countdown('2017/05/10', function (e) {
             $(this).html(e.strftime("<div class='countdown-section'><h2>%D<span> :</span></h2> <h3>day%!D</h3> </div><div class='countdown-section'><h2>%H<span> :</span></h2> <h3>Hour%!H</h3> </div><div class='countdown-section'><h2>%M<span> :</span></h2> <h3>Min%!M</h3> </div><div class='countdown-section'><h2>%S</h2> <h3>Sec%!S</h3> </div>"))
 
         });

@@ -1,7 +1,7 @@
-/*xanh duong: #008394 
+/*xanh duong: #008394` 
 xanh la: #59e3a5*/ 
 
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,400,500,700);
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,400,500,700');
 html,
 body {
   font-size: 16px;
@@ -1448,7 +1448,7 @@ ul {
   color: #444444;
 }
 .header-style2 .header-bottom-area nav ul li a:hover {
-  color: #512da8;
+  color: #008394;
 }
 .header-style2 .header-bottom-area nav ul li ul li a {
   color: #ffffff;
@@ -1535,7 +1535,7 @@ ul {
 }
 .mean-container .mean-nav ul li a {
   color: #222222;
-  font-weight: 700;
+  font-weight: 700; 
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -2783,6 +2783,10 @@ body.mean-container #wrapper {
   position: relative;
   margin-bottom: 10px;
 }
+.speakers-box img {
+  width: 288px;
+  height: 300px !important;
+}
 @media only screen and (max-width: 991px) {
   .speakers-area .speakers-box a img {
     width: 100%;
@@ -2812,7 +2816,7 @@ body.mean-container #wrapper {
 .speakers-area .speakers-box .speakers-box-content .speakers-read-more a {
   color: #ffffff;
   font-size: 20px;
-  background: #e91e63;
+  background: #59e3a5;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -2852,7 +2856,7 @@ body.mean-container #wrapper {
   transition: all 0.5s ease-out;
 }
 .speakers-area .speakers-box:hover .speakers-box-content {
-  background: #512da8;
+  background: #008391;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
@@ -3114,9 +3118,7 @@ body.mean-container #wrapper {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-.single-speakers-area .single-speakers-img-wraper .single-speakers-img-holder:hover img {
-  opacity: 0.6;
-}
+
 .single-speakers-area .single-speakers-content-holder h2 {
   color: #222222;
   text-transform: capitalize;
@@ -3150,13 +3152,14 @@ body.mean-container #wrapper {
   }
 }
 .single-speakers-area .single-speakers-content-holder h3 {
-  color: #e91e63;
+  color: #008394;
   font-size: 18px;
   margin-bottom: 18px;
 }
 .single-speakers-area .single-speakers-content-holder p {
   line-height: 1.4;
   margin-bottom: 10px;
+  text-align: justify;
 }
 .single-speakers-area .single-speakers-content-holder .single-speakers-social {
   margin-bottom: 30px;
@@ -3185,7 +3188,7 @@ body.mean-container #wrapper {
   transition: all 0.5s ease-out;
 }
 .single-speakers-area .single-speakers-content-holder .single-speakers-social li:hover a i {
-  color: #e91e63;
+  color: #59e3a5;
 }
 
 /*=======================================================================
