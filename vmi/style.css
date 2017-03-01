@@ -2106,6 +2106,35 @@ body.mean-container #wrapper {
 /*=======================================================================
 [06] About Event Area
 =========================================================================*/
+/*  Video Section  */
+
+#video {
+    width: 100%;
+    height: auto;
+    background: url("img/banner/banner-contact.JPG") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 0;
+}
+#video .overlay {
+    padding: 100px 0 80px 0;
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+#video-item i {
+    color: #fff;
+}
+#video-item i:hover {
+    color: #008394;
+}
+#video h5 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+}
 
 .about-event-area {
   padding: 118px 0 102px;

@@ -175,7 +175,52 @@
 
         });
     }
+    // $('#video-item').magnificPopup({
+    //     disableOn: 700,
+    //     type: 'iframe',
 
+    //     mainClass: 'mfp-fade',
+    //     removalDelay: 160,
+    //     preloader: false,
+    //     fixedContentPos: false
+    // });
+    // $.extend(true, $.magnificPopup.defaults, {
+    //     iframe: {
+    //         patterns: {
+    //             youtube: {
+    //                 index: 'youtube.com/',
+    //                 id: 'v=',
+    //                 src: 'http://www.youtube.com/embed/%id%?autoplay=1'
+    //             }
+    //         }
+    //     }
+    // });
+    // $('#video-item').magnificPopup({
+    //    items: {
+    //       src: '<iframe text-align="center" width="700" height="400" src="https://www.youtube.com/embed/LzYrSF4cYnw?start=1026&autoplay=1" frameborder="1" allowfullscreen></iframe>',
+    //       type: 'inline'
+    //   }
+    // });
+    $('#video-item').magnificPopup({
+              items: {
+                     src: 'https://www.youtube.com/watch?v=LzYrSF4cYnw'
+                 },
+              type: 'iframe',
+              iframe: {
+                        markup: '<div class="mfp-iframe-scaler">'+
+                                '<div class="mfp-close"></div>'+
+                                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                                '</div>', 
+                    patterns: {
+                        youtube: {
+                              index: 'youtube.com/', 
+                              id: 'v=', 
+                              src: '//www.youtube.com/embed/%id%?autoplay=1&start=1026' 
+                            }
+                         },
+                         srcAction: 'iframe_src', 
+                 }
+            });
     /*-------------------------------------
      Google Map
      -------------------------------------*/
@@ -342,6 +387,120 @@
         }, 1000);
         e.preventDefault();
     });
+
+    function shuffleArray(a) {
+        var j, x, i;
+        for (i = a.length; i; i--) {
+            j = Math.floor(Math.random() * i);
+            x = a[i - 1];
+            a[i - 1] = a[j];
+            a[j] = x;
+        }
+        return a;
+    }
+    var mentors = [
+        {
+            avatar: 'img/mentors/phamduyhieu.jpg',
+            name: 'Ông Phạm Duy Hiếu',
+            job: 'Tổng Giám Đốc Quỹ',
+            detail: 'mentors/pdhieu.html'
+        },
+        {
+            avatar: 'img/mentors/bachnguyenvu.jpg',
+            name: 'Ông Bạch Nguyễn Vũ',
+            job: 'Thành viên ban điều hành',
+            detail: 'mentors/bnvu.html'
+        },
+        {
+            avatar: 'img/mentors/lehongminh.jpg',
+            name: 'Bà Lê Hồng Minh',
+            job: 'Thành viên quỹ',
+            detail: 'mentors/lhminh.html'
+        },
+        {
+            avatar: 'img/mentors/phuakoonkee.jpg',
+            name: 'Ông Phua Koon Kee',
+            job: 'CEO Aquarius',
+            detail: 'mentors/pkkee.html'
+        },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        {
+            avatar: 'img/mentors/nguyenduy.jpg',
+            name: 'Ông Nguyễn Duy',
+            job: 'Giám đốc Điều hành KOVA Trading',
+            detail: 'mentors/nguyenduy.html'
+        },
+        {
+            avatar: 'img/mentors/dangthioanh.jpg',
+            name: 'Bà Đặng Thị Oanh',
+            job: 'Giám đốc Điều hành TransformedU',
+            detail: 'mentors/dtoanh.html'
+        },
+        {
+            avatar: 'img/mentors/duongvananh.jpg',
+            name: 'Bà Đường Vân Anh',
+            job: 'Giám đốc điều hành CTCP I.value',
+            detail: 'mentors/dvanh.html'                                                                                                                                    
+        },
+        {
+            avatar: 'img/mentors/nguyennhaquyen.jpg',
+            name: 'Bà Nguyễn Nhã Quyên',
+            job: 'Head of Ecosystem Builder Unit',
+            detail: 'mentors/mandynguyen.html'
+        },
+        {
+            avatar: 'img/mentors/maithanhcong.jpg',
+            name: 'Ông MAI THÀNH CÔNG',
+            job: 'Mentor',
+            detail: 'mentors/mtcong.html'
+        },
+        {
+            avatar: 'img/mentors/nguyenducmau.jpg',
+            name: 'Ông NGUYỄN ĐỨC MẬU',
+            job: 'Mentor',
+            detail: 'mentors/ndmau.html'
+        },
+        {
+            avatar: 'img/mentors/nguyenvietduc.jpg',
+            name: 'Ông NGUYỄN VIỆT ĐỨC',
+            job: 'Mentor',
+            detail: 'mentors/nvduc.html'
+        },
+        {
+            avatar: 'img/mentors/nguyenminhphuc.jpg',
+            name: 'Ông NGUYỄN MINH PHÚC',
+            job: 'Mentor',
+            detail: 'mentors/nmphuc.html'
+        },
+        {
+            avatar: 'img/mentors/phandinhtuananh.jpg',
+            name: 'Ông PHAN ĐÌNH TUẤN ANH',
+            job: 'Mentor',
+            detail: 'mentors/pdtanh.html'
+        },
+        {
+            avatar: 'img/mentors/nguyendangtuanminh.jpg',
+            name: 'Bà NGUYỄN ĐẶNG TUẤN MINH',
+            job: 'Mentor',
+            detail: 'mentors/ndtminh.html'
+        }
+    ];
+    mentors = shuffleArray(mentors);
+    for(var i = 0; i< 8; i++){
+        let div1 = $('<div>').addClass('col-lg-3 col-md-3 col-sm-6 col-xs-6');
+        let div2 = $('<div>').addClass('speakers-box');
+        div1.append(div2);
+        let a1 = $('<a>').append($('<img>').addClass('img-responsive').attr('src', mentors[i].avatar));
+        div2.append(a1);
+        let div3 = $('<div>').addClass('speakers-box-content').append($('<h3>').text(mentors[i].name));
+        div3.append($('<span>').text(mentors[i].job));
+        let div4 = $('<div>').addClass('speakers-read-more');
+        let a2 = $('<a>').attr('href', mentors[i].detail);
+        a2.append($('<i>').addClass('fa fa-plus').attr('aria-hidden','true'));
+        div4.append(a2);
+        div3.append(div4);
+        div2.append(div3);
+        $('.mentors-area').append(div1);
+    }
 })(jQuery);
 
 
