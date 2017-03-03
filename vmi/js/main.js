@@ -388,6 +388,11 @@
         e.preventDefault();
     });
 
+    setTimeout(function(){        
+        // $('#preloader').fadeOut();
+        $('#preloader').delay(150).fadeOut('slow'); 
+    }, 2000);
+
     function shuffleArray(a) {
         var j, x, i;
         for (i = a.length; i; i--) {
