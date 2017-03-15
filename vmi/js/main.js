@@ -317,7 +317,7 @@
     setTimeout(function(){        
         // $('#preloader').fadeOut();
         $('#preloader').delay(150).fadeOut('slow'); 
-    }, 500);
+    }, 100);
 
     function shuffleArray(a) {
         var j, x, i;
